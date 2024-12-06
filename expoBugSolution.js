@@ -1,0 +1,6 @@
+The exact solution is not yet determined.  However, several approaches can be tried to improve stability. 
+1. **Update dependencies:** Ensure all packages (`expo`, `react-native`, etc.) are updated to their latest versions using `expo upgrade` and/or `npm update` or `yarn upgrade`. 
+2. **Reduce device load:** If the development server is running on a resource-constrained device (e.g., older machine), closing unnecessary apps and freeing up system resources may improve stability. 
+3. **Check network stability:** A shaky network connection could possibly cause these type of crashes. Try a wired connection or a more stable WiFi connection.
+4. **Detailed logs:** Try to enhance the log verbosity either using Expo's own log options, or using a debugger such as `node-inspector` in the hopes of capturing more information prior to the crash.  If there is more information available, the cause may be narrowed down.  
+5. **Isolate problematic packages:** Temporarily remove packages one-by-one, restarting the server after each removal, to identify if a specific package is the culprit.
